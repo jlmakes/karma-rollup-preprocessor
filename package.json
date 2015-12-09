@@ -1,0 +1,22 @@
+{
+  "name": "karma-rollup-preprocessor",
+  "version": "1.0.0",
+  "description": "A rollup preprocessor for Karma",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/showpad/karma-rollup-preprocessor.git"
+  },
+  "keywords": ["karma", "rollup", "preprocessor"],
+  "license": "MIT",
+    "bugs": {
+    "url": "https://github.com/showpad/karma-rollup-preprocessorissues"
+  },
+  "homepage": "https://github.com/showpad/karma-rollup-preprocessor",
+  "dependencies": {
+    "rollup": "^0.21.2"
+  }
+}
