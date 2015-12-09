@@ -25,7 +25,7 @@ The `rollupPreprocessor` configuration is optional. (You'll need to install more
 module.exports = function (config) {
   config.set({
     preprocessors: {
-      'test/main*.js': ['rollup']
+      'test/main.js': ['rollup']
     },
     rollupPreprocessor: {
       plugins: [
