@@ -13,7 +13,9 @@ This preprocessor is mainly used to bundle your spec entry point but might be us
 
 
 # Installation
+````js
 npm install karma-rollup-preprocessor --save-dev
+````
 
 
 # Configuration
