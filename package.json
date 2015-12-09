@@ -4,7 +4,7 @@
   "description": "A rollup preprocessor for Karma",
   "main": "lib/index.js",
   "scripts": {
-    "test": "gulp karma"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
