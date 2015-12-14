@@ -28,6 +28,7 @@ So when adding the `sourceMaps` options, `inline` is the only logical value.
 
 ## Example
 ```js
+// karma.conf.js
 module.exports = function (config) {
   config.set({
     preprocessors: {
