@@ -16,9 +16,17 @@ npm install karma-rollup-preprocessor --save-dev
 
 
 # Configuration
-See [rollup wiki](https://github.com/rollup/rollup/wiki) for more details.    
-The `rollupPreprocessor` configuration is optional. (You'll need to install more dependencies)
+The `rollupPreprocessor` configuration is optional. (You'll need to install more dependencies). It takes two keys: `rollup` and
+ `bundle`.
 
+`rollup` is the configuration object for `rollup` (See [rollup.rollup](https://github.com/rollup/rollup/wiki/JavaScript-API#rolluprollup-options-) for more details).
+
+`bundle` is the configuration object used when generating the bundle  (See [bundle.generate](https://github.com/rollup/rollup/wiki/JavaScript-API#bundlegenerate-options-) for more details)
+*Notice* this is preprocessor and does not write a file or return the bundle, only the content of the processed file gets changed.
+So when adding the `sourceMaps` options, `inline` is the only logical value.
+
+
+## Example
 ```js
 module.exports = function (config) {
   config.set({
@@ -26,13 +34,18 @@ module.exports = function (config) {
       'test/main.js': ['rollup']
     },
     rollupPreprocessor: {
-      plugins: [
-        require('rollup-plugin-babel')({
-          presets: [
-            require('babel-preset-es2015-rollup')
-          ]
-        })
-      ]
+      rollup: {
+        plugins: [
+          require('rollup-plugin-babel')({
+            presets: [
+              require('babel-preset-es2015-rollup')
+            ]
+          })
+        ]
+      },
+      bundle: {
+        sourceMap: 'inline'
+      }
     }
   });
 };
