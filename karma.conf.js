@@ -27,13 +27,15 @@ module.exports = function (config)
 
         // specify the config for the rollup pre-processor: run babel plugin on the code
         rollupPreprocessor: {
-            plugins: [
-                require('rollup-plugin-babel')({
-                    presets: [
-                        require('babel-preset-es2015-rollup')
-                    ]
-                })
-            ]
+            rollup: {
+                plugins: [
+                    require('rollup-plugin-babel')({
+                        presets: [
+                            require('babel-preset-es2015-rollup')
+                        ]
+                    })
+                ]
+            }
         },
 
         // load necessary plugins
