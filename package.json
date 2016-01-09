@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/showpad/karma-rollup-preprocessor",
   "dependencies": {
-    "rollup": "^0.21.2"
+    "rollup": "^0.24.1"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.0.0",
