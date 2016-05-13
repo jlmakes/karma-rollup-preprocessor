@@ -1,6 +1,6 @@
 {
   "name": "karma-rollup-preprocessor",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A rollup preprocessor for Karma",
   "main": "lib/index.js",
   "scripts": {
