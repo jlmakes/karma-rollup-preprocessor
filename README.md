@@ -1,5 +1,7 @@
 # karma-rollup-preprocessor
 
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
+
 [![Build Status](https://travis-ci.org/showpad/karma-rollup-preprocessor.svg)](https://travis-ci.org/showpad/karma-rollup-preprocessor)
 [![npm version](https://img.shields.io/npm/v/karma-rollup-preprocessor.svg)](https://www.npmjs.org/package/karma-rollup-preprocessor)
 [![npm downloads](https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg)](https://www.npmjs.org/package/karma-rollup-preprocessor)
