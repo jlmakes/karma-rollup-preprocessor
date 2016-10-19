@@ -33,6 +33,7 @@ So when adding the `sourceMaps` options, `inline` is the only logical value.
 // karma.conf.js
 module.exports = function (config) {
   config.set({
+    plugins: ['karma-rollup-preprocessor'],
     preprocessors: {
       'test/main.js': ['rollup']
     },
