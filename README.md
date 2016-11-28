@@ -1,8 +1,9 @@
 # karma-rollup-preprocessor
 
-[![Build Status](https://travis-ci.org/showpad/karma-rollup-preprocessor.svg)](https://travis-ci.org/showpad/karma-rollup-preprocessor)
-[![npm version](https://img.shields.io/npm/v/karma-rollup-preprocessor.svg)](https://www.npmjs.org/package/karma-rollup-preprocessor)
-[![npm downloads](https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg)](https://www.npmjs.org/package/karma-rollup-preprocessor)
+[![Travis CI][travis-badge]][travis-url]
+[![NPM downloads][downloads-badge]][downloads-url]
+[![Version][version-badge]][version-url]
+[![License MIT][license-badge]][license-url]
 
 > Preprocessor to bundle ES6 modules fly with [rollup](http://rollupjs.org/).
 
@@ -51,3 +52,11 @@ module.exports = function (config) {
   });
 };
 ```
+[travis-badge]: https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg
+[travis-url]: https://travis-ci.org/jlmakes/karma-rollup-preprocessor
+[downloads-badge]: https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg?style=flat
+[downloads-url]: https://npmjs.org/package/karma-rollup-preprocessor
+[version-badge]: https://img.shields.io/npm/v/karma-rollup-preprocessor.svg
+[version-url]: https://www.npmjs.org/package/karma-rollup-preprocessor
+[license-badge]: https://img.shields.io/badge/license-MIT-1283c3.svg
+[license-url]: https://opensource.org/licenses/MIT
