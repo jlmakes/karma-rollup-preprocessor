@@ -41,7 +41,7 @@ module.exports = function (config) {
 		plugins: [
 			'karma-jasmine',
 			'karma-phantomjs-launcher',
-			require('./lib'),
+			require('./src'),
 		],
 
 
