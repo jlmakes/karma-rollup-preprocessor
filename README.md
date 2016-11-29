@@ -27,8 +27,7 @@ The `rollupPreprocessor` configuration is optional. It takes two keys: `rollup` 
 ```js
 // karma.conf.js
 
-const babel = require('rollup-plugin-babel');
-const es2015 = require('babel-preset-es2015-rollup');
+const buble = require('rollup-plugin-buble');
 
 module.exports = function (config) {
 	config.set({
@@ -37,11 +36,7 @@ module.exports = function (config) {
 		},
 		rollupPreprocessor: {
 			rollup: {
-				plugins: [
-					babel({
-						presets: [es2015],
-					}),
-				],
+				plugins: [buble()],
 			},
 			bundle: {
 				sourceMap: 'inline',

@@ -1,5 +1,7 @@
 // Karma configuration
 // Generated on Wed Dec 09 2015 16:06:35 GMT+0100 (CET)
+var buble = require('rollup-plugin-buble');
+
 module.exports = function (config) {
 	config.set({
 
@@ -26,11 +28,7 @@ module.exports = function (config) {
 		// specify the config for the rollup pre-processor: run babel plugin on the code
 		rollupPreprocessor: {
 			rollup: {
-				plugins: [
-					require('rollup-plugin-babel')({
-						presets: ['es2015-rollup'],
-					}),
-				],
+				plugins: [buble()],
 			},
 		},
 
