@@ -12,8 +12,9 @@
   },
   "keywords": [
     "karma",
-    "rollup",
-    "preprocessor"
+    "plugin",
+    "preprocessor",
+    "rollup"
   ],
   "bugs": {
     "url": "https://github.com/jlmakes/karma-rollup-preprocessor/issues"
