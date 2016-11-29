@@ -1,5 +1,7 @@
 // Karma configuration
 // Generated on Wed Dec 09 2015 16:06:35 GMT+0100 (CET)
+var babel = require('rollup-plugin-babel');
+var es2015 = require('babel-preset-es2015-rollup');
 
 module.exports = function (config) {
 	config.set({
@@ -28,10 +30,8 @@ module.exports = function (config) {
 		rollupPreprocessor: {
 			rollup: {
 				plugins: [
-					require('rollup-plugin-babel')({
-						presets: [
-							require('babel-preset-es2015-rollup'),
-						],
+					babel({
+						presets: [es2015],
 					}),
 				],
 			},
