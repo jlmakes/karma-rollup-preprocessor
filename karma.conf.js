@@ -1,8 +1,7 @@
 // Karma configuration
 // Generated on Wed Dec 09 2015 16:06:35 GMT+0100 (CET)
 
-module.exports = function (config)
-{
+module.exports = function (config) {
 	config.set({
 
 		// base path, that will be used to resolve files and exclude
@@ -15,13 +14,13 @@ module.exports = function (config)
 
 		// list of files / patterns to load in the browser
 		files: [
-			'test/main.js'
+			'test/main.js',
 		],
 
 
 		// add a preprocessor for the main test file
 		preprocessors: {
-			'test/main.js': ['rollup']
+			'test/main.js': ['rollup'],
 		},
 
 
@@ -31,18 +30,18 @@ module.exports = function (config)
 				plugins: [
 					require('rollup-plugin-babel')({
 						presets: [
-							require('babel-preset-es2015-rollup')
-						]
-					})
-				]
-			}
+							require('babel-preset-es2015-rollup'),
+						],
+					}),
+				],
+			},
 		},
 
 		// load necessary plugins
 		plugins: [
 			'karma-jasmine',
 			'karma-phantomjs-launcher',
-			require('./lib')
+			require('./lib'),
 		],
 
 
@@ -90,6 +89,6 @@ module.exports = function (config)
 
 		// Continuous Integration mode
 		// if true, it capture browsers, run tests and exit
-		singleRun: true
+		singleRun: true,
 	});
 };
