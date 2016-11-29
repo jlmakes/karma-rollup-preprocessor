@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/showpad/karma-rollup-preprocessor.git"
+    "url": "git://github.com/jlmakes/karma-rollup-preprocessor.git"
   },
   "keywords": [
     "karma",
@@ -16,9 +16,9 @@
     "preprocessor"
   ],
   "bugs": {
-    "url": "https://github.com/showpad/karma-rollup-preprocessor/issues"
+    "url": "https://github.com/jlmakes/karma-rollup-preprocessor/issues"
   },
-  "homepage": "https://github.com/showpad/karma-rollup-preprocessor",
+  "homepage": "https://github.com/jlmakes/karma-rollup-preprocessor",
   "dependencies": {
     "rollup": "^0.26.0"
   },
