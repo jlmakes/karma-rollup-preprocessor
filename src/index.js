@@ -14,7 +14,7 @@ function createPreprocessor (args, config, logger) {
 	config = config || {};
 
 	function preprocess (content, file, done) {
-		log.debug('Processing "%s".', file.originalPath);
+		log.debug('Processing %s', file.originalPath);
 
 		try {
 			config.entry = file.originalPath;
