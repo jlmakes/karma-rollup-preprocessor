@@ -2,14 +2,8 @@
 
 var rollup = require('rollup');
 
-/**
- * @param {Object} args - Config object of custom preprocessor.
- * @param {Object} config - Config object of rollup preprocessor.
- * @param {Object} logger - Karma's log utility.
- * @param {Object} helper - Karma's helper functions.
- * @return {function}
- */
-function createPreprocessor (args, config, logger) {
+
+function createPreprocessor (config, logger) {
 	var log = logger.create('preprocessor.rollup');
 	config = config || {};
 
@@ -46,7 +40,7 @@ function createPreprocessor (args, config, logger) {
 	return preprocess;
 }
 
-createPreprocessor.$inject = ['args', 'config.rollupPreprocessor', 'logger', 'helper'];
+createPreprocessor.$inject = ['config.rollupPreprocessor', 'logger'];
 
 module.exports = {
 	'preprocessor:rollup': ['factory', createPreprocessor],
