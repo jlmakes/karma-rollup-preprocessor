@@ -13,26 +13,23 @@ function createPreprocessor (args, config, logger) {
 	var log = logger.create('preprocessor.rollup');
 	config = config || {};
 
-	var rollupConfig = config.rollup || {};
-	var bundleConfig = config.bundle || {};
-
 	function preprocess (content, file, done) {
 		log.debug('Processing "%s".', file.originalPath);
 
 		try {
-			rollupConfig.entry = file.originalPath;
+			config.entry = file.originalPath;
 
 			rollup
-				.rollup(rollupConfig)
+				.rollup(config)
 				.then(function (bundle) {
-					if (!bundleConfig.hasOwnProperty('format')) {
-						bundleConfig.format = 'es';
+					if (!config.hasOwnProperty('format')) {
+						config.format = 'es';
 					}
 
-					var generated = bundle.generate(bundleConfig);
+					var generated = bundle.generate(config);
 					var processed = generated.code;
 
-					if (bundleConfig.sourceMap === 'inline') {
+					if (config.sourceMap === 'inline') {
 						var url = generated.map.toUrl();
 						processed += '\n' + '//# sourceMappingURL=' + url;
 					}

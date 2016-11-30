@@ -6,41 +6,32 @@ Karma preprocessor to bundle ES6 modules using [Rollup](http://rollupjs.org/).
 [![Version][version-badge]][version-url]
 [![License MIT][license-badge]][license-url]
 
-# Installation
+## Installation
 ```bash
 npm install karma-rollup-preprocessor --save-dev
 ```
 
 
-# Configuration
-The `rollupPreprocessor` configuration is optional. It takes two keys: `rollup` and `bundle`.
+## Configuration
+All the options detailed in the [Rollup Documentation](https://github.com/rollup/rollup/wiki/JavaScript-API) can be passed to `rollupPreprocessor`.
 
-- `rollup` - basic configuration (See [rollup.rollup](https://github.com/rollup/rollup/wiki/JavaScript-API#rolluprollup-options))
+### Example
+Below is a well-founded recommendation using the [Bublé](https://buble.surge.sh) ES2015 transpiler:
 
-- `bundle` - options used during bundle generation  (See [bundle.generate](https://github.com/rollup/rollup/wiki/JavaScript-API#bundlegenerate-options))
-
->**Note:** This is preprocessor, and does not write to a file or return any bundle.
->So when adding the `sourceMaps` options, `inline` is the only logical value.
-
-
-## Example
 ```js
 // karma.conf.js
-
-const buble = require('rollup-plugin-buble');
-
 module.exports = function (config) {
 	config.set({
 		preprocessors: {
 			'test/main.js': ['rollup'],
 		},
 		rollupPreprocessor: {
-			rollup: {
-				plugins: [buble()],
-			},
-			bundle: {
-				sourceMap: 'inline',
-			},
+			plugins: [
+				require('rollup-plugin-buble')(),
+			],
+			format: 'iife',              // helps prevent naming collisions
+			moduleName: '<your_project>' // required for 'iife' format
+			sourceMap: 'inline',         // sensible for testing
 		},
 	});
 };
