@@ -1,6 +1,6 @@
 'use strict';
 
-var rollup = require('rollup');
+var rollup = require('rollup').rollup;
 
 
 function createPreprocessor (config, logger) {
@@ -13,23 +13,21 @@ function createPreprocessor (config, logger) {
 		try {
 			config.entry = file.originalPath;
 
-			rollup
-				.rollup(config)
-				.then(function (bundle) {
-					var generated = bundle.generate(config);
-					var processed = generated.code;
+			rollup(config).then(function (bundle) {
+				var generated = bundle.generate(config);
+				var processed = generated.code;
 
-					if (config.sourceMap === 'inline') {
-						var url = generated.map.toUrl();
-						processed += '\n' + '//# sourceMappingURL=' + url;
-					}
+				if (config.sourceMap === 'inline') {
+					var url = generated.map.toUrl();
+					processed += '\n' + '//# sourceMappingURL=' + url;
+				}
 
-					done(null, processed);
-				})
-				.catch(function (error) {
-					log.error('Failed to process "%s".\n  %s', file.originalPath, error.message);
-					done(error, null);
-				});
+				done(null, processed);
+			})
+			.catch(function (error) {
+				log.error('Failed to process "%s".\n  %s', file.originalPath, error.message);
+				done(error, null);
+			});
 
 		} catch (exception) {
 			log.error('%s\n at %s', exception.message, file.originalPath);
