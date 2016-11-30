@@ -22,10 +22,6 @@ function createPreprocessor (args, config, logger) {
 			rollup
 				.rollup(config)
 				.then(function (bundle) {
-					if (!config.hasOwnProperty('format')) {
-						config.format = 'es';
-					}
-
 					var generated = bundle.generate(config);
 					var processed = generated.code;
 
