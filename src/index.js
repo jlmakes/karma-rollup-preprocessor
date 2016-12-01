@@ -3,6 +3,7 @@
 var rollup = require('rollup').rollup;
 
 var dependencyMap = new Map();
+var staleDependants = new Set();
 
 
 function createPreprocessor (config, logger) {
@@ -28,6 +29,19 @@ function createPreprocessor (config, logger) {
 					.filter(function (id) { return id !== file.originalPath; });
 
 				dependencyMap.set(file.originalPath, file.dependencies);
+
+				/**
+				 * Check all dependants to see if the current file
+				 * is one of their dependencies, marking those that
+				 * match as stale.
+				 */
+				for (var entry of dependencyMap.entries()) {
+					var dependant = entry[0];
+					var dependencies = entry[1];
+					if (dependencies.indexOf(file.originalPath) > -1) {
+						staleDependants.add(dependant);
+					}
+				}
 
 				var generated = bundle.generate(config);
 				var processed = generated.code;
