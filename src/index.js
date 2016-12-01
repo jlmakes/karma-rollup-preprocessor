@@ -25,12 +25,12 @@ function createPreprocessor (config, logger) {
 				done(null, processed);
 			})
 			.catch(function (error) {
-				log.error('Failed to process "%s".\n  %s', file.originalPath, error.message);
+				log.error('Failed to process %s\n\n%s\n', file.originalPath, error.message);
 				done(error, null);
 			});
 
 		} catch (exception) {
-			log.error('%s\n at %s', exception.message, file.originalPath);
+			log.error('Exception processing %s\n\n%s\n', file.originalPath, exception.message);
 			done(exception, null);
 		}
 	}
