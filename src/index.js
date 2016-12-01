@@ -5,6 +5,8 @@ var rollup = require('rollup').rollup;
 
 function createPreprocessor (config, logger) {
 	var log = logger.create('preprocessor.rollup');
+	var cache;
+
 	config = config || {};
 
 	function preprocess (content, file, done) {
@@ -12,10 +14,13 @@ function createPreprocessor (config, logger) {
 
 		try {
 			config.entry = file.originalPath;
+			config.cache = cache;
 
 			rollup(config).then(function (bundle) {
 				var generated = bundle.generate(config);
 				var processed = generated.code;
+
+				cache = bundle;
 
 				if (config.sourceMap === 'inline') {
 					var url = generated.map.toUrl();
