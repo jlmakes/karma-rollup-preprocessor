@@ -23,8 +23,7 @@ function createPreprocessor (config, logger) {
 				cache = bundle;
 
 				if (config.sourceMap === 'inline') {
-					var url = generated.map.toUrl();
-					processed += '\n' + '//# sourceMappingURL=' + url;
+					processed += '\n' + '//# sourceMappingURL=' + generated.map.toUrl() + '\n';
 				}
 
 				done(null, processed);
