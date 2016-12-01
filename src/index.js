@@ -1,6 +1,8 @@
 'use strict';
 
+var fs = require('fs');
 var rollup = require('rollup').rollup;
+var debounce = require('debounce');
 
 var dependencyMap = new Map();
 var staleDependants = new Set();
@@ -9,6 +11,20 @@ var staleDependants = new Set();
 function createPreprocessor (config, logger) {
 	var log = logger.create('preprocessor.rollup');
 	var cache;
+
+	/**
+	 * Manually update the modified and accessed timestamps
+	 * of all dependants marked by changed dependencies.
+	 */
+	var recompileDependants = debounce(function () {
+		var now = Date.now();
+		for (var dependant of staleDependants.values()) {
+			fs.utimes(dependant, now, now);
+			log.debug('Recompiling dependant %s', dependant);
+		}
+		staleDependants.clear();
+	}, 50);
+
 
 	config = config || {};
 
@@ -33,13 +49,14 @@ function createPreprocessor (config, logger) {
 				/**
 				 * Check all dependants to see if the current file
 				 * is one of their dependencies, marking those that
-				 * match as stale.
+				 * match as stale and triggering their recompilation.
 				 */
 				for (var entry of dependencyMap.entries()) {
 					var dependant = entry[0];
 					var dependencies = entry[1];
 					if (dependencies.indexOf(file.originalPath) > -1) {
 						staleDependants.add(dependant);
+						recompileDependants();
 					}
 				}
 

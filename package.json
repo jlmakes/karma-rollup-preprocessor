@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/jlmakes/karma-rollup-preprocessor",
   "dependencies": {
+    "debounce": "^1.0.0",
     "rollup": "^0.x"
   },
   "devDependencies": {
