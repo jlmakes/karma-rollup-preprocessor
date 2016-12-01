@@ -2,6 +2,7 @@
 Karma preprocessor to bundle ES6 modules using [Rollup](http://rollupjs.org/).
 
 [![Travis CI][travis-badge]][travis-url]
+[![David DM][david-badge]][david-url]
 [![NPM downloads][downloads-badge]][downloads-url]
 [![Version][version-badge]][version-url]
 [![License MIT][license-badge]][license-url]
@@ -49,6 +50,8 @@ module.exports = function (config) {
 
 [travis-badge]: https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg
 [travis-url]: https://travis-ci.org/jlmakes/karma-rollup-preprocessor
+[david-badge]: https://img.shields.io/david/jlmakes/karma-rollup-preprocessor.svg
+[david-url]: https://david-dm.org/jlmakes/karma-rollup-preprocessor
 [downloads-badge]: https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg?style=flat
 [downloads-url]: https://npmjs.org/package/karma-rollup-preprocessor
 [version-badge]: https://img.shields.io/npm/v/karma-rollup-preprocessor.svg
