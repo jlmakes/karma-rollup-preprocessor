@@ -22,9 +22,17 @@ Below is a well-founded recommendation using the [Bublé](https://buble.surge.sh
 // karma.conf.js
 module.exports = function (config) {
 	config.set({
+
+		files: [
+			'src/**/*.js',
+			'test/**/*.spec.js',
+		],
+
 		preprocessors: {
-			'test/main.js': ['rollup'],
+			'src/**/*.js': ['rollup'],
+			'test/**/*.spec.js': ['rollup'],
 		},
+
 		rollupPreprocessor: {
 			plugins: [
 				require('rollup-plugin-buble')(),
@@ -37,9 +45,7 @@ module.exports = function (config) {
 };
 ```
 
-***
-
-From the ![heart](http://i.imgur.com/oXJmdtz.gif) of [Julian Lloyd](https://twitter.com/jlmakes) © 2016
+<p align="center">From the ![heart](http://i.imgur.com/oXJmdtz.gif) of [Julian Lloyd](https://twitter.com/jlmakes) © 2016<p>
 
 [travis-badge]: https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg
 [travis-url]: https://travis-ci.org/jlmakes/karma-rollup-preprocessor
