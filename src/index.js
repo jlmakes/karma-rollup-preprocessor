@@ -2,6 +2,8 @@
 
 var rollup = require('rollup').rollup;
 
+var dependencyMap = new Map();
+
 
 function createPreprocessor (config, logger) {
 	var log = logger.create('preprocessor.rollup');
@@ -17,6 +19,16 @@ function createPreprocessor (config, logger) {
 			config.cache = cache;
 
 			rollup(config).then(function (bundle) {
+
+				/**
+				 * Map all dependencies of the current file
+				 */
+				file.dependencies = bundle.modules
+					.map(function (module) { return module.id; })
+					.filter(function (id) { return id !== file.originalPath; });
+
+				dependencyMap.set(file.originalPath, file.dependencies);
+
 				var generated = bundle.generate(config);
 				var processed = generated.code;
 
