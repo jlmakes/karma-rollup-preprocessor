@@ -2,56 +2,56 @@
 Karma preprocessor to bundle ES6 modules using [Rollup](http://rollupjs.org/).
 
 [![Travis CI][travis-badge]][travis-url]
+[![David DM][david-badge]][david-url]
 [![NPM downloads][downloads-badge]][downloads-url]
 [![Version][version-badge]][version-url]
 [![License MIT][license-badge]][license-url]
 
-# Installation
+## Installation
 ```bash
 npm install karma-rollup-preprocessor --save-dev
 ```
 
 
-# Configuration
-The `rollupPreprocessor` configuration is optional. It takes two keys: `rollup` and `bundle`.
+## Configuration
+All the options detailed in the [Rollup Documentation](https://github.com/rollup/rollup/wiki/JavaScript-API) can be passed to `rollupPreprocessor`.
 
-- `rollup` - basic configuration (See [rollup.rollup](https://github.com/rollup/rollup/wiki/JavaScript-API#rolluprollup-options))
+### Example
+Below is a well-founded recommendation using the [Bublé](https://buble.surge.sh) ES2015 transpiler:
 
-- `bundle` - options used during bundle generation  (See [bundle.generate](https://github.com/rollup/rollup/wiki/JavaScript-API#bundlegenerate-options))
-
->**Note:** This is preprocessor, and does not write to a file or return any bundle.
->So when adding the `sourceMaps` options, `inline` is the only logical value.
-
-
-## Example
 ```js
 // karma.conf.js
-
-const buble = require('rollup-plugin-buble');
-
 module.exports = function (config) {
 	config.set({
+
+		files: [
+			'src/**/*.js',
+			'test/**/*.spec.js',
+		],
+
 		preprocessors: {
-			'test/main.js': ['rollup'],
+			'src/**/*.js': ['rollup'],
+			'test/**/*.spec.js': ['rollup'],
 		},
+
 		rollupPreprocessor: {
-			rollup: {
-				plugins: [buble()],
-			},
-			bundle: {
-				sourceMap: 'inline',
-			},
+			plugins: [
+				require('rollup-plugin-buble')(),
+			],
+			format: 'iife',              // helps prevent naming collisions
+			moduleName: '<your_project>' // required for 'iife' format
+			sourceMap: 'inline',         // sensible for testing
 		},
 	});
 };
 ```
 
-***
-
-From the ![heart](http://i.imgur.com/oXJmdtz.gif) of [Julian Lloyd](https://twitter.com/jlmakes) © 2016
+<p align="center">From the ![heart](http://i.imgur.com/oXJmdtz.gif) of [Julian Lloyd](https://twitter.com/jlmakes) © 2016<p>
 
 [travis-badge]: https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg
 [travis-url]: https://travis-ci.org/jlmakes/karma-rollup-preprocessor
+[david-badge]: https://img.shields.io/david/jlmakes/karma-rollup-preprocessor.svg
+[david-url]: https://david-dm.org/jlmakes/karma-rollup-preprocessor
 [downloads-badge]: https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg?style=flat
 [downloads-url]: https://npmjs.org/package/karma-rollup-preprocessor
 [version-badge]: https://img.shields.io/npm/v/karma-rollup-preprocessor.svg
