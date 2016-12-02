@@ -11,7 +11,11 @@
     "url": "git://github.com/jlmakes/karma-rollup-preprocessor.git"
   },
   "keywords": [
+    "es2015",
     "karma",
+    "modules",
+    "import",
+    "export",
     "plugin",
     "preprocessor",
     "rollup"
