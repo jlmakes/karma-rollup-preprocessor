@@ -1,17 +1,38 @@
-# karma-rollup-preprocessor
-Karma preprocessor to bundle ES6 modules using [Rollup](http://rollupjs.org/).
+<p align="center"><img width="200"src="https://jlmak.es/logos/png/karma-rollup-preprocessor.png?v=1"></p>
+<p align="center">Karma preprocessor to bundle ES6 modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
+<p align="center">
+	<a href="https://travis-ci.org/jlmakes/karma-rollup-preprocessor">
+		<img src="https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg" alt="Build Status">
+	</a>
+	<a href="https://david-dm.org/jlmakes/karma-rollup-preprocessor">
+		<img src="https://img.shields.io/david/jlmakes/karma-rollup-preprocessor.svg" alt="Dependency Status">
+	</a>
+	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor">
+		<img src="https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg" alt="Downloads">
+	</a>
+	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor">
+		<img src="https://img.shields.io/npm/v/karma-rollup-preprocessor.svg" alt="Version">
+	</a>
+	<a href="https://opensource.org/licenses/MIT">
+		<img src="https://img.shields.io/npm/l/karma-rollup-preprocessor.svg" alt="License">
+	</a>
+</p>
 
-[![Travis CI][travis-badge]][travis-url]
-[![David DM][david-badge]][david-url]
-[![NPM downloads][downloads-badge]][downloads-url]
-[![Version][version-badge]][version-url]
-[![License MIT][license-badge]][license-url]
+<br>
+
+## Features
+- Rebundles your files when watched dependencies change
+- Caches bundle output for improved performance
+- Maintained with ![heart](http://i.imgur.com/oXJmdtz.gif) by [@jlmakes](https://twitter.com/jlmakes)
+
+<br>
 
 ## Installation
 ```bash
 npm install karma-rollup-preprocessor --save-dev
 ```
 
+<br>
 
 ## Configuration
 All the options detailed in the [Rollup Documentation](https://github.com/rollup/rollup/wiki/JavaScript-API) can be passed to `rollupPreprocessor`.
@@ -46,15 +67,8 @@ module.exports = function (config) {
 };
 ```
 
-<p align="center">From the ![heart](http://i.imgur.com/oXJmdtz.gif) of [Julian Lloyd](https://twitter.com/jlmakes) © 2016<p>
+<br>
 
-[travis-badge]: https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg
-[travis-url]: https://travis-ci.org/jlmakes/karma-rollup-preprocessor
-[david-badge]: https://img.shields.io/david/jlmakes/karma-rollup-preprocessor.svg
-[david-url]: https://david-dm.org/jlmakes/karma-rollup-preprocessor
-[downloads-badge]: https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg?style=flat
-[downloads-url]: https://npmjs.org/package/karma-rollup-preprocessor
-[version-badge]: https://img.shields.io/npm/v/karma-rollup-preprocessor.svg
-[version-url]: https://www.npmjs.org/package/karma-rollup-preprocessor
-[license-badge]: https://img.shields.io/badge/license-MIT-1283c3.svg
-[license-url]: https://opensource.org/licenses/MIT
+## Support
+
+Supports all Rollup plug-ins, and works on Node `0.12.x` and up. Happy bundling!
