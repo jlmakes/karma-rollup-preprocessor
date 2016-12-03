@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/)
 ### Fixed
 - Revised CHANGELOG grammar for clarity.
 - Inconsistent `.eslintrc.json` indentation fixed.
+- Update example to exclude `src/` files from browser.
 
 
 ## [3.0.0] - 2016-12-02

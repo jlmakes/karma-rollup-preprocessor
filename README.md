@@ -46,7 +46,9 @@ module.exports = function (config) {
 	config.set({
 
 		files: [
-			'src/**/*.js',
+			// watch src files for changes but
+			// don't load them into the browser.
+			{ pattern: 'src/**/*.js', included: false },
 			'test/**/*.spec.js',
 		],
 
