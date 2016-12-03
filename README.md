@@ -1,5 +1,5 @@
 <p align="center"><img width="200"src="https://jlmak.es/logos/png/karma-rollup-preprocessor.png?v=1"></p>
-<p align="center">Karma preprocessor to bundle ES6 modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
+<p align="center">Karma preprocessor to bundle ES2015 modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
 <p align="center">
 	<a href="https://travis-ci.org/jlmakes/karma-rollup-preprocessor">
 		<img src="https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg" alt="Build Status">
