@@ -5,14 +5,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
+## Unreleased
+
+### Fixed
+- Revised CHANGELOG grammar for clarity.
+
+
 ## [3.0.0] - 2016-12-02
 
 A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who originally authored this repository, and has passed the torch to [@jlmakes](https://github.com/jlmakes) to keep things in tidy working order.
 
 ### Added
-- Support for Karma `autoWatch: true`. Any file changes now properly reprocess all dependencies. [@brianmhunt](https://github.com/brianmhunt) [#3](https://github.com/jlmakes/karma-rollup-preprocessor/issues/3) [#11](https://github.com/jlmakes/karma-rollup-preprocessor/pull/11)
-- Generated bundles are now cached for improved performance. [#10](https://github.com/jlmakes/karma-rollup-preprocessor/issues/10)
-- Error log output has been improved for clarity.
+- File changes now properly re-bundle all watched dependencies. [@brianmhunt](https://github.com/brianmhunt) [#3](https://github.com/jlmakes/karma-rollup-preprocessor/issues/3) [#11](https://github.com/jlmakes/karma-rollup-preprocessor/pull/11)
+- Generated bundles are now cached for faster re-bundling. [#10](https://github.com/jlmakes/karma-rollup-preprocessor/issues/10)
+- Error log output has been improved for readability.
 
 ### Changed
 - **Breaking:** The `2.0.0` change that split preprocessor options has been reverted.
@@ -35,7 +41,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 - Replaced `phantomjs` with `phantomjs-prebuild`. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
 
 ### Fixed
-- Corrected typo preventing Rollup errors outputting to karma error log. [#7](https://github.com/jlmakes/karma-rollup-preprocessor/pull/7)
+- Corrected typo preventing Rollup errors outputting to the karma error log. [#7](https://github.com/jlmakes/karma-rollup-preprocessor/pull/7)
 
 
 ## [2.0.1] - 2016-01-11
