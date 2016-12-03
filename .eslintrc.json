@@ -6,7 +6,7 @@
   "rules": {
     "array-bracket-spacing": [2, "never", { "arraysInArrays": true }],
     "block-spacing": 2,
-	"brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
     "comma-dangle": [2, "always-multiline"],
     "comma-spacing": [2, { "before": false, "after": true }],
     "eol-last": [2, "always"],
