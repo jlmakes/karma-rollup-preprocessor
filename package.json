@@ -1,6 +1,6 @@
 {
   "name": "karma-rollup-preprocessor",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Karma preprocessor to bundle ES2015 modules using Rollup",
   "main": "lib/index.js",
   "scripts": {
