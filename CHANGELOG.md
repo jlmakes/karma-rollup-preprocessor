@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
+## Unreleased
+
+### Changed
+- Updated `rollup-plugin-buble` dev dependency to latest version.
+
 ## [3.0.1] - 2016-12-03
 
 ### Fixed
