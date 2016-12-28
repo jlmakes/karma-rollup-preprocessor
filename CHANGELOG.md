@@ -71,6 +71,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[3.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.1...3.0.2
 [3.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/2.0.2...3.0.0
 [2.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/2658714f911bac857be4b2d169ea363d33d85050...2.0.2
