@@ -61,9 +61,9 @@ module.exports = function (config) {
 			plugins: [
 				require('rollup-plugin-buble')(),
 			],
-			format: 'iife',              // helps prevent naming collisions
-			moduleName: '<your_project>' // required for 'iife' format
-			sourceMap: 'inline',         // sensible for testing
+			format: 'iife',               // helps prevent naming collisions
+			moduleName: '<your_project>', // required for 'iife' format
+			sourceMap: 'inline',          // sensible for testing
 		},
 	});
 };

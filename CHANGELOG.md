@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/)
 ### Changed
 - Updated `rollup-plugin-buble` dev dependency to latest version.
 
+### Fixed
+- Add missing comma to example karma configuration.
+
 ## [3.0.1] - 2016-12-03
 
 ### Fixed
