@@ -73,4 +73,4 @@ module.exports = function (config) {
 
 ## Support
 
-Supports all Rollup plug-ins, and works on Node `0.12.x` and up. Happy bundling!
+Supports all Rollup plug-ins, and works on Node `4` and up. Happy bundling!
