@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
+## [3.0.3] - 2017-01-03
+
+### Changed
+- Added callback to `fs.utimes` to silence deprecation warning. [@FezVrasta](https://github.com/FezVrasta) [#18](https://github.com/jlmakes/karma-rollup-preprocessor/pull/18)
+
+### Removed
+- Dropped support for Node `0.12`.
+
 ## [3.0.2] - 2016-12-29
 
 ### Changed
@@ -71,6 +79,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[3.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.2...3.0.3
 [3.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.1...3.0.2
 [3.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/2.0.2...3.0.0
