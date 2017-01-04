@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
+## [4.0.0] - 2017-01-04
+
+### Changed
+- **Breaking:** Node `4` or greater is required.
+
 ## [3.0.3] - 2017-01-03
 
 ### Changed
