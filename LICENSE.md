@@ -1,6 +1,6 @@
 The MIT License
 
-Copyright (c) 2017 Julian Lloyd
+Copyright (c) 2015–2017 [Contributors](https://github.com/jlmakes/karma-rollup-preprocessor/graphs/contributors)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
