@@ -71,6 +71,50 @@ module.exports = function (config) {
 
 <br>
 
+## Custom Configuration
+This preprocessor support the `customPreprocessors` options, it can be useful to specify more than one rollup configuration:
+
+```js
+// karma.conf.js
+module.exports = function (config) {
+	config.set({
+
+		files: [
+			// watch src files for changes but
+			// don't load them into the browser.
+			{ pattern: 'src/**/*.js', included: false },
+			'test/**/*.spec.js',
+		],
+
+		preprocessors: {
+			'test/buble/**/*.spec.js': ['rollup'],
+			'test/babel/**/*.spec.js': ['rollupBabel'],
+		},
+
+		rollupPreprocessor: {
+			format: 'iife',
+			moduleName: '<your_project>',
+			sourceMap: 'inline',
+			plugins: [
+				require('rollup-plugin-buble')(),
+			],
+		},
+
+		customPreprocessors: {
+			rollupBabel: {
+				base: 'rollup',
+				options: {
+					// All non overridden options are extracted from `rollupPreprocessor` options.
+					plugins: [
+						require('rollup-plugin-babel')(),
+					],
+				}
+			}
+		}
+	});
+};
+```
+
 ## Support
 
 Supports all Rollup plug-ins, and works on Node `4` and up. Happy bundling!

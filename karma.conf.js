@@ -14,20 +14,38 @@ module.exports = function (config) {
 		// list of files / patterns to load in the browser
 		files: [
 			'test/main.js',
+			'test/main-node.js',
 		],
 
 
 		// add a preprocessor for the main test file
 		preprocessors: {
 			'test/main.js': ['rollup'],
+			'test/main-node.js': ['rollupNode'],
 		},
 
 
 		// specify the config for the rollup pre-processor: run babel plugin on the code
 		rollupPreprocessor: {
+			format: 'iife',
 			plugins: [
 				require('rollup-plugin-buble')(),
 			],
+		},
+
+		// specify a custom config for the rollup pre-processor:
+		// run node-resolve + commonjs + buble plugin on the code
+		customPreprocessors: {
+			rollupNode: {
+				base: 'rollup',
+				options: {
+					plugins: [
+						require('rollup-plugin-node-resolve')(),
+						require('rollup-plugin-commonjs')(),
+						require('rollup-plugin-buble')(),
+					],
+				},
+			},
 		},
 
 		// load necessary plugins
