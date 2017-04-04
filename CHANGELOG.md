@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
-## Unreleased
+## [4.0.0] - 2017-04-04
 
 ### Added
 - Custom preprocessors are now supported. [@mjeanroy](https://github.com/mjeanroy) [#20](https://github.com/jlmakes/karma-rollup-preprocessor/pull/20)
