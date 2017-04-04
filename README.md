@@ -46,7 +46,7 @@ module.exports = function (config) {
 	config.set({
 
 		files: [
-			// watch src files for changes but
+			// Watch src files for changes but
 			// don't load them into the browser.
 			{ pattern: 'src/**/*.js', included: false },
 			'test/**/*.spec.js',
@@ -61,9 +61,9 @@ module.exports = function (config) {
 			plugins: [
 				require('rollup-plugin-buble')(),
 			],
-			format: 'iife',               // helps prevent naming collisions
-			moduleName: '<your_project>', // required for 'iife' format
-			sourceMap: 'inline',          // sensible for testing
+			format: 'iife',               // Helps prevent naming collisions.
+			moduleName: '<your_project>', // Required for 'iife' format.
+			sourceMap: 'inline',          // Sensible for testing.
 		},
 	});
 };
@@ -72,7 +72,7 @@ module.exports = function (config) {
 <br>
 
 ### Configured Preprocessors
-Below shows one example where [`customPreprocessors` option](http://karma-runner.github.io/1.0/config/preprocessors.html) can be very helpful:
+Below shows an example where [configured preprocessors](http://karma-runner.github.io/1.0/config/preprocessors.html) can be very helpful:
 
 ```js
 // karma.conf.js
@@ -80,7 +80,7 @@ module.exports = function (config) {
 	config.set({
 
 		files: [
-			// watch src files for changes but
+			// Watch src files for changes but
 			// don't load them into the browser.
 			{ pattern: 'src/**/*.js', included: false },
 			'test/**/*.spec.js',
@@ -101,9 +101,13 @@ module.exports = function (config) {
 		},
 
 		customPreprocessors: {
+			// Clones the base preprocessor, but overwrites
+			// its options with those defined below.
 			rollupBabel: {
 				base: 'rollup',
 				options: {
+					// In this case, to use
+					// a different transpiler:
 					plugins: [
 						require('rollup-plugin-babel')(),
 					],
