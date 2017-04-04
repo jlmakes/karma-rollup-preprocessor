@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/)
 
 ## Unreleased
 
+### Added
+- Custom preprocessors are now supported. [@mjeanroy](https://github.com/mjeanroy) [#20](https://github.com/jlmakes/karma-rollup-preprocessor/pull/20)
+
 ### Changed
 - **Breaking:** Dropped support for Node `0.12`.
 
