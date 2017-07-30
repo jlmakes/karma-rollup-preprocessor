@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
+## [4.0.2] - 2017-07-30
+
+### Changed
+
+- Require at least Rollup v0.45. [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
+
+### Changed
+- Update depedency versions.
+
 ## [4.0.1] - 2017-07-14
 
 ### Fixed
