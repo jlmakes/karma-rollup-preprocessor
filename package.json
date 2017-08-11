@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jlmakes/karma-rollup-preprocessor",
   "dependencies": {
-    "rollup": "^0.45",
+    "rollup": ">=0.45.x",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
