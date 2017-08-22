@@ -1,9 +1,11 @@
 # Change Log
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/)
+## Unreleased
 
+### Changed
+
+- **Breaking:** Rollup 0.47.x and below is no longer supported.
+- **Breaking:** Rollup is now a peer dependency.
 
 ## [4.0.4] - 2017-08-22
 

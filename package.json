@@ -24,9 +24,8 @@
     "url": "https://github.com/jlmakes/karma-rollup-preprocessor/issues"
   },
   "homepage": "https://github.com/jlmakes/karma-rollup-preprocessor",
-  "dependencies": {
-    "rollup": "0.45 - 0.47",
-    "lodash": "^4.17.4"
+  "peerDependencies": {
+    "rollup": ">= 0.48"
   },
   "devDependencies": {
     "eslint": "^4.2.0",
