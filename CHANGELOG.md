@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/)
 
 
+## [4.0.4] - 2017-08-22
+
+### Changed
+
+- Is there an echo in here? Update depedency versions. Require Rollup 0.45 – 0.47. [#24](https://github.com/jlmakes/karma-rollup-preprocessor/issues/24)
+
 ## [4.0.3] - 2017-08-11
 
 ### Changed
