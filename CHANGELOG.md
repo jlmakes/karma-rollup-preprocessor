@@ -9,19 +9,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/)
 
 ### Changed
 
-- Is there an echo in here? Update depedency versions. Require Rollup 0.45 – 0.47. [#24](https://github.com/jlmakes/karma-rollup-preprocessor/issues/24)
+- Is there an echo in here? Update dependency versions. Require Rollup 0.45 – 0.47. [#24](https://github.com/jlmakes/karma-rollup-preprocessor/issues/24)
 
 ## [4.0.3] - 2017-08-11
 
 ### Changed
 
-- Update depedency versions. Allow Rollup >= v0.45.
+- Update dependency versions. Allow Rollup >= v0.45.
 
 ## [4.0.2] - 2017-07-30
 
 ### Changed
 
-- Update depedency versions. Require Rollup v0.45. [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
+- Update dependency versions. Require Rollup v0.45. [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
 
 ## [4.0.1] - 2017-07-14
 
