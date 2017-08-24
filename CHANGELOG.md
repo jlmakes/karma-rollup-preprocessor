@@ -3,26 +3,26 @@
 ## Unreleased
 
 ### Changed
-
 - **Breaking:** Rollup 0.47.x and below is no longer supported.
 - **Breaking:** Rollup is now a peer dependency.
+- **Breaking:** Requires different Karma configuration.
+
+### Fixed
+- The file watcher has been re-built stronger, better, and faster. [#17](https://github.com/jlmakes/karma-rollup-preprocessor/issues/17)
 
 ## [4.0.4] - 2017-08-22
 
 ### Changed
-
 - Is there an echo in here? Update dependency versions. Require Rollup 0.45 – 0.47. [#24](https://github.com/jlmakes/karma-rollup-preprocessor/issues/24)
 
 ## [4.0.3] - 2017-08-11
 
 ### Changed
-
 - Update dependency versions. Allow Rollup >= v0.45.
 
 ## [4.0.2] - 2017-07-30
 
 ### Changed
-
 - Update dependency versions. Require Rollup v0.45. [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
 
 ## [4.0.1] - 2017-07-14
@@ -74,11 +74,11 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 - Travis CI now tests in Node `0.12`, `4` and `6`.
 - Updated `karma-jasmine` to latest major version.
 
-### Removed
-- Preprocessor no longer sets a default bundle format.
-
 ### Fixed
 - Test script now uses explicit path to Karma binary.
+
+### Removed
+- Preprocessor no longer sets a default bundle format.
 
 
 ## [2.0.2] - 2016-05-13
