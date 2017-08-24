@@ -114,6 +114,12 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[5.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.0.0...5.0.1
+[5.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/4.0.3...4.0.4
+[4.0.4]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/4.0.2...3.0.3
+[4.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/4.0.1...4.0.2
+[4.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/4.0.0...4.0.1
+[4.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.3...4.0.0
 [4.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.3...4.0.0
 [3.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.2...3.0.3
 [3.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/3.0.1...3.0.2
