@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## [5.0.0] - 2017-08-24
 
 ### Changed
 - **Breaking:** Rollup 0.47.x and below is no longer supported.
