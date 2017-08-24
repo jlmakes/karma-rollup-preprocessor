@@ -1,5 +1,10 @@
 # Change Log
 
+## [5.0.1] - 2017-08-24
+
+### Fixed
+- Hotfix peer dependency within Travis CI config (for Node 6).
+
 ## [5.0.0] - 2017-08-24
 
 ### Changed
