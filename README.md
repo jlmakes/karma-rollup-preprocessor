@@ -29,7 +29,7 @@
 
 ## Installation
 ```bash
-npm install karma-rollup-preprocessor --save-dev
+npm install karma-rollup-preprocessor
 ```
 
 <br>
@@ -46,27 +46,25 @@ module.exports = function (config) {
 	config.set({
 
 		files: [
-			// Watch src files for changes but
-			// don't load them into the browser.
-			{ pattern: 'src/**/*.js', included: false },
-			'test/**/*.spec.js',
+			// Make sure to disable Karma’s file watcher
+			// because the preprocessor will use its own.
+			{ pattern: 'test/**/*.spec.js', watched: false }
 		],
 
 		preprocessors: {
-			'src/**/*.js': ['rollup'],
-			'test/**/*.spec.js': ['rollup'],
+			'test/**/*.spec.js': ['rollup']
 		},
 
 		rollupPreprocessor: {
 			plugins: [
-				require('rollup-plugin-buble')(),
+				require('rollup-plugin-buble')()
 			],
-			format: 'iife',               // Helps prevent naming collisions.
-			moduleName: '<your_project>', // Required for 'iife' format.
-			sourceMap: 'inline',          // Sensible for testing.
-		},
-	});
-};
+			format: 'iife',         // Helps prevent naming collisions.
+			name: '<your_project>', // Required for 'iife' format.
+			sourcemap: 'inline'     // Sensible for testing.
+		}
+	})
+}
 ```
 
 <br>
@@ -80,42 +78,38 @@ module.exports = function (config) {
 	config.set({
 
 		files: [
-			// Watch src files for changes but
-			// don't load them into the browser.
-			{ pattern: 'src/**/*.js', included: false },
-			'test/**/*.spec.js',
+			{ pattern: 'test/**/*.spec.js', watched: false }
 		],
 
 		preprocessors: {
 			'test/buble/**/*.spec.js': ['rollup'],
-			'test/babel/**/*.spec.js': ['rollupBabel'],
+			'test/babel/**/*.spec.js': ['rollupBabel']
 		},
 
 		rollupPreprocessor: {
 			plugins: [
-				require('rollup-plugin-buble')(),
+				require('rollup-plugin-buble')()
 			],
 			format: 'iife',
-			moduleName: '<your_project>',
-			sourceMap: 'inline',
+			name: '<your_project>',
+			sourcemap: 'inline'
 		},
 
 		customPreprocessors: {
 			// Clones the base preprocessor, but overwrites
-			// its options with those defined below.
+			// its options with those defined below...
 			rollupBabel: {
 				base: 'rollup',
 				options: {
-					// In this case, to use
-					// a different transpiler:
+					// In this case, to use a different transpiler:
 					plugins: [
-						require('rollup-plugin-babel')(),
-					],
+						require('rollup-plugin-babel')()
+					]
 				}
 			}
 		}
-	});
-};
+	})
+}
 ```
 
 ## Support
