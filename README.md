@@ -1,4 +1,7 @@
-<p align="center"><img width="200" src="https://jlmak.es/logos/png/karma-rollup-preprocessor.png?v=1"></p>
+<p align="center">
+	<img src="https://jlmak.es/logos/png/karma-rollup-preprocessor.png?v=1" width="200px" >
+</p>
+<h1 align="center">Karma + Rollup</h1>
 <p align="center">Karma preprocessor to bundle ES2015 modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
 <p align="center">
 	<a href="https://travis-ci.org/jlmakes/karma-rollup-preprocessor">
@@ -21,13 +24,15 @@
 <br>
 
 ## Features
-- Rebundles your files when watched dependencies change
-- Caches bundle output for improved performance
-- Maintained with ![heart](http://i.imgur.com/oXJmdtz.gif) by [@jlmakes](https://twitter.com/jlmakes)
+
+* Rebundles your files when watched dependencies change
+* Caches bundle output for improved performance
+* Maintained with ![heart](http://i.imgur.com/oXJmdtz.gif) by [@jlmakes](https://twitter.com/jlmakes)
 
 <br>
 
 ## Installation
+
 ```bash
 npm install karma-rollup-preprocessor
 ```
@@ -35,16 +40,17 @@ npm install karma-rollup-preprocessor
 <br>
 
 ## Configuration
+
 All the options detailed in the [Rollup Documentation](https://github.com/rollup/rollup/wiki/JavaScript-API) can be passed to `rollupPreprocessor`.
 
 ### Standard
+
 Below is a well-founded recommendation using the [Bublé](https://buble.surge.sh) ES2015 transpiler:
 
 ```js
 // karma.conf.js
-module.exports = function (config) {
+module.exports = function(config) {
 	config.set({
-
 		files: [
 			// Make sure to disable Karma’s file watcher
 			// because the preprocessor will use its own.
@@ -56,12 +62,10 @@ module.exports = function (config) {
 		},
 
 		rollupPreprocessor: {
-			plugins: [
-				require('rollup-plugin-buble')()
-			],
-			format: 'iife',         // Helps prevent naming collisions.
+			plugins: [require('rollup-plugin-buble')()],
+			format: 'iife', // Helps prevent naming collisions.
 			name: '<your_project>', // Required for 'iife' format.
-			sourcemap: 'inline'     // Sensible for testing.
+			sourcemap: 'inline' // Sensible for testing.
 		}
 	})
 }
@@ -70,16 +74,14 @@ module.exports = function (config) {
 <br>
 
 ### Configured Preprocessors
+
 Below shows an example where [configured preprocessors](http://karma-runner.github.io/1.0/config/preprocessors.html) can be very helpful:
 
 ```js
 // karma.conf.js
-module.exports = function (config) {
+module.exports = function(config) {
 	config.set({
-
-		files: [
-			{ pattern: 'test/**/*.spec.js', watched: false }
-		],
+		files: [{ pattern: 'test/**/*.spec.js', watched: false }],
 
 		preprocessors: {
 			'test/buble/**/*.spec.js': ['rollup'],
@@ -87,9 +89,7 @@ module.exports = function (config) {
 		},
 
 		rollupPreprocessor: {
-			plugins: [
-				require('rollup-plugin-buble')()
-			],
+			plugins: [require('rollup-plugin-buble')()],
 			format: 'iife',
 			name: '<your_project>',
 			sourcemap: 'inline'
@@ -102,9 +102,7 @@ module.exports = function (config) {
 				base: 'rollup',
 				options: {
 					// In this case, to use a different transpiler:
-					plugins: [
-						require('rollup-plugin-babel')()
-					]
+					plugins: [require('rollup-plugin-babel')()]
 				}
 			}
 		}
