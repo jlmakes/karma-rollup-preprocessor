@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## [5.0.3] - 2018-01-05
 
 ### Changed
 - Upgraded Chokidar dependency.
@@ -124,6 +124,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[5.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.0.2...5.0.3
 [5.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.0.1...5.0.2
 [5.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.0.0...5.0.1
 [5.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/4.0.3...4.0.4
