@@ -1,10 +1,10 @@
-module.exports = function (config) {
+module.exports = function(config) {
 	config.set({
 		plugins: [
 			'karma-jasmine',
 			'karma-mocha-reporter',
 			'karma-phantomjs-launcher',
-			require('./lib'),
+			require('./lib')
 		],
 
 		frameworks: ['jasmine'],
@@ -22,22 +22,20 @@ module.exports = function (config) {
 		files: [
 			{ pattern: 'test/t1.js', watched: false },
 			{ pattern: 'test/t2.js', watched: false },
-			{ pattern: 'test/t3.js', watched: false },
+			{ pattern: 'test/t3.js', watched: false }
 		],
 		exclude: [],
 
 		preprocessors: {
 			'test/t1.js': ['rollup'],
 			'test/t2.js': ['rollup'],
-			'test/t3.js': ['rollupNode'],
+			'test/t3.js': ['rollupNode']
 		},
 
 		rollupPreprocessor: {
 			format: 'iife',
 			name: 'lib',
-			plugins: [
-				require('rollup-plugin-buble')(),
-			],
+			plugins: [require('rollup-plugin-buble')()]
 		},
 
 		customPreprocessors: {
@@ -47,10 +45,10 @@ module.exports = function (config) {
 					plugins: [
 						require('rollup-plugin-node-resolve')(),
 						require('rollup-plugin-commonjs')(),
-						require('rollup-plugin-buble')(),
-					],
-				},
-			},
-		},
+						require('rollup-plugin-buble')()
+					]
+				}
+			}
+		}
 	})
 }
