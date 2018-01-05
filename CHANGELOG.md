@@ -1,5 +1,10 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+- Upgraded Chokidar dependency.
+
 ## [5.0.2] - 2017-11-15
 
 ### Changed
