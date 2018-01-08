@@ -3,122 +3,140 @@
 ## [5.0.3] - 2018-01-05
 
 ### Changed
-- Upgraded Chokidar dependency.
+
+* Upgraded Chokidar dependency.
 
 ## [5.0.2] - 2017-11-15
 
 ### Changed
-- Error logs now show stack traces when possible.
+
+* Error logs now show stack traces when possible.
 
 ## [5.0.1] - 2017-08-24
 
 ### Fixed
-- Hotfix peer dependency within Travis CI config (for Node 6).
+
+* Hotfix peer dependency within Travis CI config (for Node 6).
 
 ## [5.0.0] - 2017-08-24
 
 ### Changed
-- **Breaking:** Rollup 0.47.x and below is no longer supported.
-- **Breaking:** Rollup is now a peer dependency.
-- **Breaking:** Requires different Karma configuration.
+
+* **Breaking:** Rollup 0.47.x and below is no longer supported.
+* **Breaking:** Rollup is now a peer dependency.
+* **Breaking:** Requires different Karma configuration.
 
 ### Fixed
-- The file watcher has been re-built stronger, better, and faster. [#17](https://github.com/jlmakes/karma-rollup-preprocessor/issues/17)
+
+* The file watcher has been re-built stronger, better, and faster. [#17](https://github.com/jlmakes/karma-rollup-preprocessor/issues/17)
 
 ## [4.0.4] - 2017-08-22
 
 ### Changed
-- Is there an echo in here? Update dependency versions. Require Rollup 0.45 – 0.47. [#24](https://github.com/jlmakes/karma-rollup-preprocessor/issues/24)
+
+* Is there an echo in here? Update dependency versions. Require Rollup 0.45 – 0.47. [#24](https://github.com/jlmakes/karma-rollup-preprocessor/issues/24)
 
 ## [4.0.3] - 2017-08-11
 
 ### Changed
-- Update dependency versions. Allow Rollup >= v0.45.
+
+* Update dependency versions. Allow Rollup >= v0.45.
 
 ## [4.0.2] - 2017-07-30
 
 ### Changed
-- Update dependency versions. Require Rollup v0.45. [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
+
+* Update dependency versions. Require Rollup v0.45. [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
 
 ## [4.0.1] - 2017-07-14
 
 ### Fixed
-- Refactored Rollup integration for `v0.45`. [@mjeanroy](https://github.com/mjeanroy) [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
+
+* Refactored Rollup integration for `v0.45`. [@mjeanroy](https://github.com/mjeanroy) [#21](https://github.com/jlmakes/karma-rollup-preprocessor/pull/21)
 
 ## [4.0.0] - 2017-04-04
 
 ### Added
-- Custom preprocessors are now supported. [@mjeanroy](https://github.com/mjeanroy) [#20](https://github.com/jlmakes/karma-rollup-preprocessor/pull/20)
+
+* Custom preprocessors are now supported. [@mjeanroy](https://github.com/mjeanroy) [#20](https://github.com/jlmakes/karma-rollup-preprocessor/pull/20)
 
 ### Changed
-- **Breaking:** Dropped support for Node `0.12`.
+
+* **Breaking:** Dropped support for Node `0.12`.
 
 ## [3.0.3] - 2017-01-03
 
 ### Changed
-- Added callback to `fs.utimes` to silence deprecation warning. [@FezVrasta](https://github.com/FezVrasta) [#18](https://github.com/jlmakes/karma-rollup-preprocessor/pull/18)
+
+* Added callback to `fs.utimes` to silence deprecation warning. [@FezVrasta](https://github.com/FezVrasta) [#18](https://github.com/jlmakes/karma-rollup-preprocessor/pull/18)
 
 ## [3.0.2] - 2016-12-29
 
 ### Changed
-- Updated `rollup-plugin-buble` dev dependency to latest version.
+
+* Updated `rollup-plugin-buble` dev dependency to latest version.
 
 ### Fixed
-- Add missing comma to example karma configuration.
+
+* Add missing comma to example karma configuration.
 
 ## [3.0.1] - 2016-12-03
 
 ### Fixed
-- Revised CHANGELOG grammar for clarity.
-- Inconsistent `.eslintrc.json` indentation fixed.
-- Update example to exclude `src/` files from browser.
 
+* Revised CHANGELOG grammar for clarity.
+* Inconsistent `.eslintrc.json` indentation fixed.
+* Update example to exclude `src/` files from browser.
 
 ## [3.0.0] - 2016-12-02
 
 A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who originally authored this repository, and has passed the torch to [@jlmakes](https://github.com/jlmakes) to keep things in tidy working order.
 
 ### Added
-- File changes now properly re-bundle all watched dependencies. [@brianmhunt](https://github.com/brianmhunt) [#3](https://github.com/jlmakes/karma-rollup-preprocessor/issues/3) [#11](https://github.com/jlmakes/karma-rollup-preprocessor/pull/11)
-- Generated bundles are now cached for faster re-bundling. [#10](https://github.com/jlmakes/karma-rollup-preprocessor/issues/10)
-- Error log output has been improved for readability.
+
+* File changes now properly re-bundle all watched dependencies. [@brianmhunt](https://github.com/brianmhunt) [#3](https://github.com/jlmakes/karma-rollup-preprocessor/issues/3) [#11](https://github.com/jlmakes/karma-rollup-preprocessor/pull/11)
+* Generated bundles are now cached for faster re-bundling. [#10](https://github.com/jlmakes/karma-rollup-preprocessor/issues/10)
+* Error log output has been improved for readability.
 
 ### Changed
-- **Breaking:** The `2.0.0` change that split preprocessor options has been reverted.
-- Rollup dependency range changed to anything < `1.0.0`. [#12](https://github.com/jlmakes/karma-rollup-preprocessor/pull/12) [#13](https://github.com/jlmakes/karma-rollup-preprocessor/issues/13)
-- Travis CI now tests in Node `0.12`, `4` and `6`.
-- Updated `karma-jasmine` to latest major version.
+
+* **Breaking:** The `2.0.0` change that split preprocessor options has been reverted.
+* Rollup dependency range changed to anything < `1.0.0`. [#12](https://github.com/jlmakes/karma-rollup-preprocessor/pull/12) [#13](https://github.com/jlmakes/karma-rollup-preprocessor/issues/13)
+* Travis CI now tests in Node `0.12`, `4` and `6`.
+* Updated `karma-jasmine` to latest major version.
 
 ### Fixed
-- Test script now uses explicit path to Karma binary.
+
+* Test script now uses explicit path to Karma binary.
 
 ### Removed
-- Preprocessor no longer sets a default bundle format.
 
+* Preprocessor no longer sets a default bundle format.
 
 ## [2.0.2] - 2016-05-13
 
 ### Changed
-- Rollup dependency version updated. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
-- Updated `karma-phantomjs-launcher` to latest major version. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
-- Replaced `phantomjs` with `phantomjs-prebuild`. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
+
+* Rollup dependency version updated. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
+* Updated `karma-phantomjs-launcher` to latest major version. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
+* Replaced `phantomjs` with `phantomjs-prebuild`. [#9](https://github.com/jlmakes/karma-rollup-preprocessor/pull/9)
 
 ### Fixed
-- Corrected typo preventing Rollup errors outputting to the karma error log. [#7](https://github.com/jlmakes/karma-rollup-preprocessor/pull/7)
 
+* Corrected typo preventing Rollup errors outputting to the karma error log. [#7](https://github.com/jlmakes/karma-rollup-preprocessor/pull/7)
 
 ## [2.0.1] - 2016-01-11
 
 ### Added
-- Rollup errors are now output to the karma error log. [#5](https://github.com/jlmakes/karma-rollup-preprocessor/pull/5)
-- Rollup dependency version updated.
+
+* Rollup errors are now output to the karma error log. [#5](https://github.com/jlmakes/karma-rollup-preprocessor/pull/5)
+* Rollup dependency version updated.
 
 ## [2.0.0] - 2015-12-14
 
 ### Changed
 
-- **Breaking:** Preprocessor options have been split into 2 separate objects, `rollup` and `bundle`.
-
+* **Breaking:** Preprocessor options have been split into 2 separate objects, `rollup` and `bundle`.
 
 ## [1.0.0] - 2015-12-09
 
