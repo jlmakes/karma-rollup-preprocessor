@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.1.1] - 2018-01-08
+
+### Fixed
+
+* Patched `sourcemap` deprecation warning.
+
 ## [5.1.0] - 2018-01-08
 
 ### Added
