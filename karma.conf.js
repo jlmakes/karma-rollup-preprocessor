@@ -33,8 +33,11 @@ module.exports = function(config) {
 		},
 
 		rollupPreprocessor: {
-			format: 'iife',
-			name: 'lib',
+			output: {
+				name: 'lib',
+				format: 'iife',
+				sourcemap: 'inline'
+			},
 			plugins: [require('rollup-plugin-buble')()]
 		},
 
