@@ -52,8 +52,10 @@ Below is a well-founded recommendation using the [Bublé](https://buble.surge.sh
 module.exports = function(config) {
 	config.set({
 		files: [
-			// Make sure to disable Karma’s file watcher
-			// because the preprocessor will use its own.
+			/**
+			 * Make sure to disable Karma’s file watcher
+			 * because the preprocessor will use its own.
+			 */
 			{ pattern: 'test/**/*.spec.js', watched: false }
 		],
 
@@ -62,10 +64,16 @@ module.exports = function(config) {
 		},
 
 		rollupPreprocessor: {
+			/**
+			 * This is just a normal Rollup config object,
+			 * except that `input` is handled for you.
+			 */
 			plugins: [require('rollup-plugin-buble')()],
-			format: 'iife', // Helps prevent naming collisions.
-			name: '<your_project>', // Required for 'iife' format.
-			sourcemap: 'inline' // Sensible for testing.
+			output: {
+				format: 'iife',            // Helps prevent naming collisions.
+				name: '<your_project>',    // Required for 'iife' format.
+				sourcemap: 'inline'        // Sensible for testing.
+			}
 		}
 	})
 }
@@ -90,14 +98,18 @@ module.exports = function(config) {
 
 		rollupPreprocessor: {
 			plugins: [require('rollup-plugin-buble')()],
-			format: 'iife',
-			name: '<your_project>',
-			sourcemap: 'inline'
+			output: {
+				format: 'iife',
+				name: '<your_project>',
+				sourcemap: 'inline'
+			}
 		},
 
 		customPreprocessors: {
-			// Clones the base preprocessor, but overwrites
-			// its options with those defined below...
+			/**
+			 * Clones the base preprocessor, but overwrites
+			 * its options with those defined below...
+			 */
 			rollupBabel: {
 				base: 'rollup',
 				options: {
