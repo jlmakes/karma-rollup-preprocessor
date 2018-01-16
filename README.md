@@ -17,7 +17,7 @@
 		<img src="https://img.shields.io/npm/v/karma-rollup-preprocessor.svg" alt="Version">
 	</a>
 	<a href="https://opensource.org/licenses/MIT">
-		<img src="https://img.shields.io/npm/l/karma-rollup-preprocessor.svg" alt="License">
+		<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License">
 	</a>
 </p>
 
