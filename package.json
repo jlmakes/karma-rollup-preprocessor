@@ -3,6 +3,9 @@
     "version": "5.1.1",
     "description": "Karma preprocessor to bundle ES2015 modules using Rollup",
     "main": "lib/index.js",
+    "engines": {
+        "node": ">= 6.0.0"
+    },
     "scripts": {
         "test": "./node_modules/karma/bin/karma start karma.conf.js",
         "testing": "npm test -- --no-single-run"
@@ -29,8 +32,7 @@
         "rollup": ">= 0.48"
     },
     "dependencies": {
-        "chokidar": "^2.0.0",
-        "object-assign": "^4.1.1"
+        "chokidar": "^2.0.0"
     },
     "devDependencies": {
         "eslint": "^4.2.0",

@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+*   **Breaking:** Dropped support for Node < 6.
+
 ## [5.1.1] - 2018-01-08
 
 ### Fixed
