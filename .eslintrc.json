@@ -1,17 +1,17 @@
 {
-	"env": {
-		"es6": true,
-		"node": true
-	},
-	"extends": "eslint:recommended",
-	"rules": {
-		"no-cond-assign": 2,
-		"no-console": 1,
-		"no-const-assign": 2,
-		"no-class-assign": 2,
-		"no-this-before-super": 2,
-		"no-unused-vars": 1,
-		"no-var": 2,
-		"object-shorthand": [2, "always"]
-	}
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-cond-assign": 2,
+        "no-console": 1,
+        "no-const-assign": 2,
+        "no-class-assign": 2,
+        "no-this-before-super": 2,
+        "no-unused-vars": 1,
+        "no-var": 2,
+        "object-shorthand": [2, "always"]
+    }
 }
