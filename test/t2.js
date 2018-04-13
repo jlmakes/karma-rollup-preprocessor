@@ -1,4 +1,3 @@
-import two from "./fixtures/2";
 import three from "./fixtures/3";
 import four from "./fixtures/4";
 
