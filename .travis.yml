@@ -1,5 +1,12 @@
 language: node_js
+dist: trusty
 node_js:
   - '6'
+sudo: required
+addons:
+  chrome: stable
 before_install:
   - npm install rollup
+before_script:
+  - "sudo chown root /opt/google/chrome/chrome-sandbox"
+  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"

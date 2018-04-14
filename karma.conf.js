@@ -3,13 +3,13 @@ module.exports = function(config) {
         plugins: [
             "karma-jasmine",
             "karma-mocha-reporter",
-            "karma-phantomjs-launcher",
+            "karma-chrome-launcher",
             require("./lib")
         ],
 
         frameworks: ["jasmine"],
         reporters: ["mocha"],
-        browsers: ["PhantomJS"],
+        browsers: ["ChromeHeadless"],
 
         logLevel: config.LOG_INFO, // disable > error > warn > info > debug
         captureTimeout: 60000,
