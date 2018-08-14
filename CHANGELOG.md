@@ -1,5 +1,11 @@
 # Change Log
 
+## [6.0.1] - 2018-08-14
+
+### Changed
+
+*   Update readme.
+
 ## [6.0.0] - 2018-04-29
 
 ### Changed
