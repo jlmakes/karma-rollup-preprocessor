@@ -1,5 +1,15 @@
 # Change Log
 
+## [6.1.0] - 2018-10-17
+
+### Added
+
+*  More `info` log output. [@lephyrus](https://github.com/lephyrus) [#39](https://github.com/jlmakes/karma-rollup-preprocessor/pull/39)
+
+### Fixed
+*   Fix caching memory leak. [@lephyrus](https://github.com/lephyrus) [#38](https://github.com/jlmakes/karma-rollup-preprocessor/pull/38)
+*   Add generated source map to Karma's file object. [@Lalem001](https://github.com/Lalem001) [#38](https://github.com/jlmakes/karma-rollup-preprocessor/pull/37)
+
 ## [6.0.1] - 2018-08-14
 
 ### Changed
@@ -166,6 +176,8 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[6.1.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.0.1...6.1.0
+[6.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.0.0...6.0.1
 [6.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.1.1...6.0.0
 [5.1.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.1.0...5.1.1
 [5.1.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/5.0.3...5.1.0
