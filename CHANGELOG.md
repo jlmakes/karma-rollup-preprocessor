@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+- **Breaking:** Upgrade Rollup peer dependency to `>= 1.0.0`
+
 ## [6.1.2] - 2019-01-02
 
 ### Changed
