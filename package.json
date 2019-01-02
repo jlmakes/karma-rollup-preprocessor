@@ -29,7 +29,7 @@
     },
     "homepage": "https://github.com/jlmakes/karma-rollup-preprocessor",
     "peerDependencies": {
-        "rollup": ">= 0.48"
+        "rollup": ">= 0.48 <1.0.0"
     },
     "dependencies": {
         "chokidar": "^2.0.0"
