@@ -1,3 +1,3 @@
 export default function four() {
-    return "4";
+  return "4";
 }
