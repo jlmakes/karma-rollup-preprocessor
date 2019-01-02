@@ -1,5 +1,11 @@
 # Change Log
 
+## [6.1.2] - 2019-01-02
+
+### Changed
+
+- Constrained Rollup peer dependency to `< 1.0.0`
+
 ## [6.1.1] - 2018-11-28
 
 ### Fixed
@@ -183,6 +189,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[6.1.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.1...6.1.2
 [6.1.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.0...6.1.1
 [6.1.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.0.1...6.1.0
 [6.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.0.0...6.0.1
