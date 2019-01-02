@@ -5,6 +5,7 @@
 ### Changed
 
 - **Breaking:** Upgrade Rollup peer dependency to `>= 1.0.0`
+- **Breaking:** Dropped support for Node `< 8.0.0`
 
 ## [6.1.2] - 2019-01-02
 
@@ -39,7 +40,7 @@
 
 ### Changed
 
-- **Breaking:** Dropped support for Node < 6.
+- **Breaking:** Dropped support for Node `< 6.0.0`
 
 ## [5.1.1] - 2018-01-08
 

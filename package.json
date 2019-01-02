@@ -4,7 +4,7 @@
   "description": "Karma preprocessor to bundle ES2015 modules using Rollup",
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 8.0.0"
   },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js",
