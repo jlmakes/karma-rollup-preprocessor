@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Support for Rollup `1.0.0` [#42](https://github.com/jlmakes/karma-rollup-preprocessor/issues/42)
+
 ### Changed
 
 - **Breaking:** Upgrade Rollup peer dependency to `>= 1.0.0`
