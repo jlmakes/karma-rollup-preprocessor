@@ -32,7 +32,8 @@
     "rollup": ">= 1.0.0"
   },
   "dependencies": {
-    "chokidar": "^2.0.0"
+    "chokidar": "^2.0.0",
+    "debounce": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^5.11.1",
