@@ -8,15 +8,15 @@
 
 ### Changed
 
-- **Breaking:** Upgrade Rollup peer dependency to `>= 1.0.0`
+- **Breaking:** Dropped support for Rollup `< 1.0.0`
 - **Breaking:** Dropped support for Node `< 8.0.0`
-- Upgrade dependencies.
+- Watcher no longer relies on Karma’s `run_start` event. [#41](https://github.com/jlmakes/karma-rollup-preprocessor/issues/41)
+- Upgraded dependencies.
 
 ### Fixed
 
-- Watcher no longer relies on Karma’s `run_start` event. [#41](https://github.com/jlmakes/karma-rollup-preprocessor/issues/41)
-- Watcher no longer rebundles everything, and instead only rebundles changed files and their dependents. [#28](https://github.com/jlmakes/karma-rollup-preprocessor/issues/28)
-- No longer stores only the last Rollup bundle cache, and instead maps each entry to its bundle cache.
+- Watcher only rebundles changed files and their dependents. [#28](https://github.com/jlmakes/karma-rollup-preprocessor/issues/28)
+- Each entry file has its bundle cache.
 
 ## [6.1.2] - 2019-01-02
 
