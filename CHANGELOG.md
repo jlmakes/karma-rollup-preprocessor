@@ -63,7 +63,7 @@
 
 ### Added
 
-- File names containing null bytes are now ignored.
+- File names containing null bytes are now ignored. [@brianmhunt](https://github.com/brianmhunt) [#30](https://github.com/jlmakes/karma-rollup-preprocessor/issues/30)
 
 ## [5.0.3] - 2018-01-05
 
