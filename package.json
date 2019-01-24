@@ -32,13 +32,13 @@
     "rollup": ">= 1.0.0"
   },
   "dependencies": {
-    "chokidar": "^2.0.0",
+    "chokidar": "^2.1.0",
     "debounce": "^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.12.0",
+    "eslint": "^5.13.0",
     "jasmine-core": "^3.3.0",
-    "karma": "^3.1.4",
+    "karma": "^4.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1",
     "karma-mocha-reporter": "^2.2.3",
