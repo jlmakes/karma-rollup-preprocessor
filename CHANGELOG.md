@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## [7.0.0] - 2019-02-06
 
 ### Added
 
@@ -16,7 +16,7 @@
 ### Fixed
 
 - Watcher only rebundles changed files and their dependents. [#28](https://github.com/jlmakes/karma-rollup-preprocessor/issues/28)
-- Each entry file has its bundle cache.
+- Bundle cache now properly maps each entry to its bundle cache.
 
 ## [6.1.2] - 2019-01-02
 
@@ -207,6 +207,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[7.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.2...7.0.0
 [6.1.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.1...6.1.2
 [6.1.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.0...6.1.1
 [6.1.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.0.1...6.1.0
