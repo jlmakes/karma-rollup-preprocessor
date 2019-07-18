@@ -36,12 +36,16 @@
     "debounce": "^1.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-typescript": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "eslint": "^5.13.0",
     "jasmine-core": "^3.3.0",
     "karma": "^4.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1",
     "karma-mocha-reporter": "^2.2.3",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-buble": "^0.19.6",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0"

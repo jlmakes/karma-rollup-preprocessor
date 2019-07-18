@@ -22,14 +22,16 @@ module.exports = function(config) {
     files: [
       { pattern: "test/t1.js", watched: false },
       { pattern: "test/t2.js", watched: false },
-      { pattern: "test/t3.js", watched: false }
+      { pattern: "test/t3.js", watched: false },
+      { pattern: "test/t4.ts", watched: false }
     ],
     exclude: [],
 
     preprocessors: {
       "test/t1.js": ["rollup"],
       "test/t2.js": ["rollup"],
-      "test/t3.js": ["rollupNode"]
+      "test/t3.js": ["rollupNode"],
+      "test/t4.ts": ["rollupNodeTypescript"]
     },
 
     rollupPreprocessor: {
@@ -49,6 +51,24 @@ module.exports = function(config) {
             require("rollup-plugin-node-resolve")(),
             require("rollup-plugin-commonjs")(),
             require("rollup-plugin-buble")()
+          ]
+        }
+      },
+      rollupNodeTypescript: {
+        base: "rollup",
+        options: {
+          plugins: [
+            require("rollup-plugin-node-resolve")({
+              extensions: [".js", ".ts"]
+            }),
+            require("rollup-plugin-commonjs")({
+              include: "node_modules/**",
+              extensions: [".js", ".ts"]
+            }),
+            require("rollup-plugin-babel")({
+              exclude: "node_modules/**",
+              extensions: [".js", ".ts"]
+            })
           ]
         }
       }
