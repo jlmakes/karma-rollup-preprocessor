@@ -1,6 +1,14 @@
 # Change Log
 
+## [7.0.2] - 2019-07-20
+
+### Fixed
+
+- Regenerate `package-lock.json`
+
 ## [7.0.1] - 2019-07-20
+
+### Fixed
 
 - Ensure TypeScript bundle filenames have the correct extension. [@silenceisgolden](https://github.com/silenceisgolden) [#53](https://github.com/jlmakes/karma-rollup-preprocessor/issues/53)
 
@@ -211,6 +219,8 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[7.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.1...7.0.2
+[7.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.0...7.0.1
 [7.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.2...7.0.0
 [6.1.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.1...6.1.2
 [6.1.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.0...6.1.1
