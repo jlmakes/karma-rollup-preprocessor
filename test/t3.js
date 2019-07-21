@@ -1,9 +1,9 @@
-import debounce from "debounce";
+import debounce from 'debounce'
 
-describe("t3", () => {
-  describe("CommonJS Module", () => {
-    it("Should be defined.", () => {
-      expect(debounce).toBeDefined();
-    });
-  });
-});
+describe('t3', () => {
+	describe('CommonJS Module', () => {
+		it('Should be defined.', () => {
+			expect(debounce).toBeDefined()
+		})
+	})
+})

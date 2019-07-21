@@ -1,3 +1,3 @@
 export default function b() {
-    return "b";
+	return 'b'
 }
