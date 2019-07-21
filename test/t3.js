@@ -1,9 +1,9 @@
-import assign from "object-assign";
+import debounce from "debounce";
 
 describe("t3", () => {
   describe("CommonJS Module", () => {
     it("Should be defined.", () => {
-      expect(assign).toBeDefined();
+      expect(debounce).toBeDefined();
     });
   });
 });
