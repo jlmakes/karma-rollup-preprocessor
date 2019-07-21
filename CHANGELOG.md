@@ -1,5 +1,9 @@
 # Change Log
 
+## [7.0.1] - 2019-07-20
+
+- Ensure TypeScript bundle filenames have the correct extension. [@silenceisgolden](https://github.com/silenceisgolden) [#53](https://github.com/jlmakes/karma-rollup-preprocessor/issues/53)
+
 ## [7.0.0] - 2019-02-06
 
 ### Added
