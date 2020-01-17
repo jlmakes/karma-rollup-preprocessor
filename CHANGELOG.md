@@ -1,5 +1,14 @@
 # Change Log
 
+## [7.0.3] - 2020-01-16
+
+### Fixed
+
+- Ensure original file path is used for processing [#56](https://github.com/jlmakes/karma-rollup-preprocessor/issues/56)
+- Silence Rollup warnings due to invalid output options [#60](https://github.com/jlmakes/karma-rollup-preprocessor/issues/60)
+
+### Added
+
 ## [7.0.2] - 2019-07-20
 
 ### Fixed
@@ -219,6 +228,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[7.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.2...7.0.3
 [7.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.1...7.0.2
 [7.0.1]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.0...7.0.1
 [7.0.0]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/6.1.2...7.0.0
