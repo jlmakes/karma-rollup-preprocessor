@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Fixed
+
+- Ignore rollup facade modules beginning with a null byte. [@Lalem001](https://github.com/Lalem001) [#62](https://github.com/jlmakes/karma-rollup-preprocessor/issues/62)
+
 ## [7.0.3] - 2020-01-16
 
 ### Fixed
