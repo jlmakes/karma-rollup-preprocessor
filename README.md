@@ -8,7 +8,7 @@
 	<img src="https://jlmak.es/logos/svg/karma+rollup-logotype.svg" width="200px" alt="Karma + Rollup">
 </p>
 
-<p align="center">Karma preprocessor to bundle ES2015 modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
+<p align="center">Karma preprocessor to bundle ES modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
 
 <p align="center">
 	<a href="https://travis-ci.org/jlmakes/karma-rollup-preprocessor">

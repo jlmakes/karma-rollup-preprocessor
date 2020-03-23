@@ -1,7 +1,7 @@
 {
 	"name": "karma-rollup-preprocessor",
-	"version": "7.0.3",
-	"description": "Karma preprocessor to bundle ES2015 modules using Rollup",
+	"version": "7.0.4",
+	"description": "Karma preprocessor to bundle ES modules using Rollup",
 	"main": "lib/index.js",
 	"engines": {
 		"node": ">= 8.0.0"
@@ -15,6 +15,7 @@
 		"url": "git://github.com/jlmakes/karma-rollup-preprocessor.git"
 	},
 	"keywords": [
+		"es",
 		"es2015",
 		"karma",
 		"modules",
