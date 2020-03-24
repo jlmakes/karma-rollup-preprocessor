@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## [7.0.5] - 2020-03-24
 
 ### Fixed
 
@@ -240,6 +240,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[7.0.5]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.4...7.0.5
 [7.0.4]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.3...7.0.4
 [7.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.2...7.0.3
 [7.0.2]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.1...7.0.2
