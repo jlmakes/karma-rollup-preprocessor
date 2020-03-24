@@ -4,7 +4,7 @@
 
 ### Fixed
 
-- File watcher works on Windows. [@spectras](https://github.com/spectras) [#65](https://github.com/jlmakes/karma-rollup-preprocessor/issues/65)
+- File path errors on Windows. [@spectras](https://github.com/spectras) [#65](https://github.com/jlmakes/karma-rollup-preprocessor/issues/65) [#66](https://github.com/jlmakes/karma-rollup-preprocessor/issues/65)
 
 ## [7.0.4] - 2020-03-22
 
