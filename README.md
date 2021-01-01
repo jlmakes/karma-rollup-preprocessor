@@ -1,11 +1,11 @@
 <p align="center">
-	<img src="https://jlmak.es/logos/png/karma-rollup-preprocessor.png?v=1" width="200px" >
+	<img src="https://jlmakes.com/logos/png/karma-rollup-preprocessor.png?v=1" width="200px" >
 </p>
 
 <br>
 
 <p align="center">
-	<img src="https://jlmak.es/logos/svg/karma+rollup-logotype.svg" width="200px" alt="Karma + Rollup">
+	<img src="https://jlmakes.com/logos/svg/karma-rollup-logotype.svg" width="200px" alt="Karma + Rollup">
 </p>
 
 <p align="center">Karma preprocessor to bundle ES modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
