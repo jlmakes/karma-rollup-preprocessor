@@ -1,5 +1,11 @@
 # Change Log
 
+## [7.0.6] - 2021-02-24
+
+### Fixed
+
+- Source map file paths. [@ntkme](https://github.com/ntkme) [#69](https://github.com/jlmakes/karma-rollup-preprocessor/pull/69)
+
 ## [7.0.5] - 2020-03-24
 
 ### Fixed
@@ -240,6 +246,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[7.0.6]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.5...7.0.6
 [7.0.5]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.4...7.0.5
 [7.0.4]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.3...7.0.4
 [7.0.3]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.2...7.0.3
