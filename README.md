@@ -1,40 +1,21 @@
-<p align="center">
-	<img src="https://jlmakes.com/logos/png/karma-rollup-preprocessor.png?v=1" width="200px" >
-</p>
+# `karma-rollup-preprocessor`
 
-<br>
+Karma preprocessor to bundle ES modules using Rollup.
 
-<p align="center">
-	<img src="https://jlmakes.com/logos/svg/karma-rollup-logotype.svg" width="200px" alt="Karma + Rollup">
-</p>
-
-<p align="center">Karma preprocessor to bundle ES modules using <a href="http://rollupjs.org/">Rollup</a>.</p>
-
-<p align="center">
+<p>
 	<a href="https://travis-ci.org/jlmakes/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor.svg" alt="Build Status">
-	</a>
-	<a href="https://david-dm.org/jlmakes/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/david/jlmakes/karma-rollup-preprocessor.svg" alt="Dependency Status">
+		<img src="https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor?color=black&style=for-the-badge" alt="Build Status">
 	</a>
 	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/npm/dm/karma-rollup-preprocessor.svg" alt="Downloads">
+		<img src="https://img.shields.io/npm/dm/karma-rollup-preprocessor?color=black&style=for-the-badge" alt="Downloads">
 	</a>
 	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/npm/v/karma-rollup-preprocessor.svg" alt="Version">
+		<img src="https://img.shields.io/npm/v/karma-rollup-preprocessor?color=black&style=for-the-badge" alt="Version">
 	</a>
 	<a href="https://opensource.org/licenses/MIT">
-		<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License">
+		<img src="https://img.shields.io/badge/license-MIT-blue?color=black&style=for-the-badge" alt="MIT License">
 	</a>
 </p>
-
-<br>
-
-## Features
-
-- Rebundles your files when watched dependencies change
-- Caches bundle output for improved performance
-- Maintained with ![heart](http://i.imgur.com/oXJmdtz.gif) by [@jlmakes](https://twitter.com/jlmakes)
 
 <br>
 
@@ -56,7 +37,7 @@ Below is a well-founded recommendation using the [Bublé](https://buble.surge.sh
 
 ```js
 // karma.conf.js
-module.exports = function(config) {
+module.exports = function (config) {
 	config.set({
 		files: [
 			/**
@@ -94,7 +75,7 @@ Below shows an example where [configured preprocessors](http://karma-runner.gith
 
 ```js
 // karma.conf.js
-module.exports = function(config) {
+module.exports = function (config) {
 	config.set({
 		files: [{ pattern: 'test/**/*.spec.js', watched: false }],
 
@@ -129,4 +110,4 @@ module.exports = function(config) {
 }
 ```
 
-Happy bundling!
+Happy bundling! ![heart](http://i.imgur.com/oXJmdtz.gif)

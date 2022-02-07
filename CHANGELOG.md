@@ -1,5 +1,11 @@
 # Change Log
 
+## [7.0.8] - 2022-02-06
+
+### Fixed
+
+- Watcher not working using TypeScript [@YonatanKra](https://github.com/YonatanKra) [#72](https://github.com/jlmakes/karma-rollup-preprocessor/issues/72]
+
 ## [7.0.7] - 2021-03-14
 
 ### Fixed
@@ -252,6 +258,7 @@ A special thanks to [@klaascuvelier](https://github.com/klaascuvelier) who origi
 
 Hello ![heart](http://i.imgur.com/oXJmdtz.gif) World
 
+[7.0.8]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.7...7.0.8
 [7.0.7]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.6...7.0.7
 [7.0.6]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.5...7.0.6
 [7.0.5]: https://github.com/jlmakes/karma-rollup-preprocessor/compare/7.0.4...7.0.5
