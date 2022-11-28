@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = function (config) {
 	config.set({
 		plugins: [
 			'karma-jasmine',
@@ -24,6 +24,7 @@ module.exports = function(config) {
 			{ pattern: 'test/t2.js', watched: false },
 			{ pattern: 'test/t3.js', watched: false },
 			{ pattern: 'test/t4.ts', watched: false },
+			{ pattern: 'test/t5.ts', watched: false },
 		],
 		exclude: [],
 
@@ -32,6 +33,7 @@ module.exports = function(config) {
 			'test/t2.js': ['rollup'],
 			'test/t3.js': ['rollupNode'],
 			'test/t4.ts': ['rollupNodeTypescript'],
+			'test/t5.ts': ['rollupOfficialTypescriptPlugin'],
 		},
 
 		rollupPreprocessor: {
@@ -69,6 +71,21 @@ module.exports = function(config) {
 							exclude: 'node_modules/**',
 							extensions: ['.js', '.ts'],
 						}),
+					],
+				},
+			},
+			rollupOfficialTypescriptPlugin: {
+				base: 'rollup',
+				options: {
+					plugins: [
+						require('@rollup/plugin-typescript'),
+						require('rollup-plugin-node-resolve')({
+							extensions: ['.js', '.ts'],
+						}),
+						require('rollup-plugin-commonjs')({
+							include: 'node_modules/**',
+							extensions: ['.js', '.ts'],
+						})
 					],
 				},
 			},
