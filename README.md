@@ -3,18 +3,9 @@
 Karma preprocessor to bundle ES modules using Rollup.
 
 <p>
-	<a href="https://travis-ci.org/jlmakes/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/travis/jlmakes/karma-rollup-preprocessor?color=black&style=for-the-badge" alt="Build Status">
-	</a>
-	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/npm/dm/karma-rollup-preprocessor?color=black&style=for-the-badge" alt="Downloads">
-	</a>
-	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor">
-		<img src="https://img.shields.io/npm/v/karma-rollup-preprocessor?color=black&style=for-the-badge" alt="Version">
-	</a>
-	<a href="https://opensource.org/licenses/MIT">
-		<img src="https://img.shields.io/badge/license-MIT-blue?color=black&style=for-the-badge" alt="MIT License">
-	</a>
+	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor"><img src="https://img.shields.io/npm/dm/karma-rollup-preprocessor?color=gray&style=flat" alt="Downloads"></a>
+	<a href="https://www.npmjs.com/package/karma-rollup-preprocessor"><img src="https://img.shields.io/npm/v/karma-rollup-preprocessor?color=gray&style=flat" alt="Version"></a>
+	<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-gray" alt="MIT license"></a>
 </p>
 
 <br>
